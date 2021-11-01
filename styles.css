@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    margin: 20px auto;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.split{
+    display: flex; 
+    overflow: hidden;
+    border-radius: 10px;   
+}
+
+.column{
+    padding: 70px 40px;
+    width: 33.3%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.split .content{
+    margin-top: 10px;
+    color: hsl(0, 0%, 95%);
+    width: 80%;
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-size: .9rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.col-1{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.col-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.col-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.split .heading{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.8rem;    
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+}
+
+.split .button button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    border:none;  
+}
+
+.button-1{
+    color:hsl(31, 77%, 52%);
+}
+
+.button-2{
+    color:hsl(184, 100%, 22%);
+}
+
+.button-3{
+    color: hsl(179, 100%, 13%);
+}
+
+.split .button button:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color: rgba(0, 0, 0, 0);
+    border:2px solid #fff;   
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+    
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    }
+    
+    .container{
+        margin: 20px auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .split{
+        display: flex; 
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;   
+    }
+    
+    .column{
+        padding: 70px 40px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
